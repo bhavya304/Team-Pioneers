@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('https://spaidy.blob.core.windows.net/generated-images/748994-Image3c4930ee-5f6c-46aa-b61c-5b44d1ef3f64.jpg') no-repeat center center/cover;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Glass Effect Container - Wider and Centered */
+/* Centering the Container with Glass Effect */
+.container {
+    width: 80%; /* Full width on mobile */
+    max-width: 900px; /* Adjust width on larger screens */
+    min-height: 900px; /* Increased height */
+    padding: 60px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 10px; /* Reduce top padding to move content up */
+    margin-top: -20px;
+    /* Center Content Inside */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+@media (min-width: 1024px) {
+    .container {
+        width: 70%; /* Reduce width for better desktop appearance */
+        max-width: 800px;
+    }
+}
+.label-topic {
+    font-family: "Montserrat", Sans-Serif; /* Change font */
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: none; /* Less gap between topic and label */
+}
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form Groups - Left Aligned Labels */
+.form-group {
+    width: 90%;
+    margin: 15px 0;
+    text-align: left;
+}
+
+/* Labels Styling */
+label {
+    display: block;
+    background: transparent;
+    color: white; /* Adjust text color for visibility */
+    border: 1px solid white; 
+    font-size: 18px;
+    font-weight: bold;/* Proper spacing between labels */
+    margin-bottom: 5px; /* Less gap between label and input */
+}
+
+
+/* Input Fields */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    outline: none;
+}
+select {
+    background: transparent;
+    color: white; /* Adjust text color for visibility */
+    border: 1px solid white; /* Optional border for better appearance */
+    padding: 10px;
+    font-size: 16px;
+}
+option {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: white; /* Text color */
+}
+
+/* Textarea */
+textarea {
+    background: transparent;
+    color: white; /* Text color */
+    border: 1px solid white; /* Optional border for visibility */
+    padding: 10px;
+    font-size: 16px;
+    outline: none; /* Removes default focus outline */
+    resize: vertical; /* Allows vertical resizing */
+}
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Light white placeholder */
+}
+/* Checkbox Group Styling */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checkbox-group input {
+    margin-right: 5px;
+}
+
+/* Button Styling */
+button {
+    width: 90%;
+    padding: 12px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+h2 {
+    font-family: "Lora", serif; /* Cursive Font */
+    font-size: 40px; /* Larger Text */
+    font-weight: bold;
+    color: black; /* Black Text */
+    text-align: center; /* Centered */
+    width: 100%; /* Ensure it spans the container */
+    margin-top: -30px; /* Move up */
+    margin-bottom: 10px; /* Auto margins for centering */
+    margin-left: -135px;
+    display: flex;
+    justify-content: center; 
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Soft Shadow for Stylish Effect */
+}
+h4 {
+    font-family: "Lora", serif;/* Cursive Font */
+    font-size: 70px; /* Larger Text */
+    font-weight: bold;
+    color: white; /* Black Text */
+    text-align: center; /* Centered */
+    width: 100%; /* Ensure it spans the container */
+    margin-top: -500px; /* Move up */
+    margin-bottom: 10px; /* Auto margins for centering */
+    display: inline-block;
+    animation: zoomText 2s infinite ease-in-out;
+    justify-content: center; 
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Soft Shadow for Stylish Effect */
+}
+h5 {
+    font-family: "Lora", serif;/* Cursive Font */
+    font-size: 50px; /* Larger Text */
+    font-weight: bold;
+    color: white; /* Black Text */
+    text-align: center; /* Centered */
+    width: 100%; /* Ensure it spans the container */
+    margin-top: -350px; /* Move up */
+    margin-bottom: 10px; /* Auto margins for centering */
+    margin-left: -700px;
+    display: inline-block;
+    animation: zoomText 2s infinite ease-in-out;
+    justify-content: left; 
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Soft Shadow for Stylish Effect */
+}
+@keyframes zoomText {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
